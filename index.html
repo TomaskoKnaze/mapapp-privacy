@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MapApp Privacy Policy</title>
+<style>
+  :root {
+    --cream: #F4F1EA;
+    --ink: #50493F;
+    --ink2: #69645D;
+    --orange: #F73E00;
+  }
+  :root:not([data-theme="light"]) { color-scheme: light; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font: 17px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 48px 16px 80px;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-family: Georgia, serif; font-size: 34px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 36px; }
+  .updated { color: var(--ink2); font-size: 15px; margin-bottom: 32px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid rgba(80,73,63,.15); vertical-align: top; }
+  th { color: var(--ink2); font-weight: 600; }
+  a { color: var(--orange); }
+  li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>MapApp Privacy Policy</h1>
+  <p class="updated">Last updated: 20 October 2026</p>
+
+  <p>MapApp is a walking companion for exploring cities. This policy explains
+  what the app collects, why, and what happens to it. The short version:
+  there are no accounts, no advertising, no tracking, and no third-party
+  analytics. Everything the app collects exists to make your suggestions and
+  explanations better, and it is linked only to an anonymous identifier
+  generated on your device.</p>
+
+  <h2>What we collect</h2>
+  <table>
+    <tr><th>Data</th><th>When</th><th>Why</th></tr>
+    <tr><td>Precise location</td><td>Sent with individual requests while you use the app (we do not keep a movement log)</td><td>Showing what is around you; nearby suggestions and events</td></tr>
+    <tr><td>Messages you write</td><td>Onboarding and companion chat</td><td>Answering you; learning your interests to personalize suggestions</td></tr>
+    <tr><td>Top music artists</td><td>Only if you connect Apple Music or Spotify (artist names and genres only — never your listening history or audio)</td><td>Matching concerts and personalizing taste</td></tr>
+    <tr><td>Preferences</td><td>If you state them (e.g. dietary, budget)</td><td>Filtering suggestions (e.g. a vegetarian never sees a steakhouse)</td></tr>
+    <tr><td>Suggestion feedback</td><td>Taps and ratings on suggestions</td><td>Improving what you are shown next</td></tr>
+    <tr><td>Device identifier</td><td>A random UUID created on first launch</td><td>Keeping your profile together — we never see your name, email, phone number, or Apple ID</td></tr>
+  </table>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>No accounts, names, or email addresses are collected.</li>
+    <li>No advertising and no data sold or shared for advertising.</li>
+    <li>No tracking across other apps or websites (no IDFA).</li>
+    <li>No third-party analytics SDKs.</li>
+    <li>No reading of your contacts, photos, calendar, or health data.</li>
+  </ul>
+
+  <h2>Who processes the data</h2>
+  <p>Your data is handled by our own server and the services it visibly
+  relies on to work:</p>
+  <ul>
+    <li><strong>Our backend</strong> (hosted on Railway, database on Supabase) stores your profile.</li>
+    <li><strong>Anthropic</strong> processes chat messages to generate the companion's replies.</li>
+    <li><strong>Google Places</strong> receives venue names/locations to check opening hours, ratings, and photos.</li>
+    <li><strong>Apple Music / Spotify</strong> are contacted only when you explicitly connect them, under their own terms.</li>
+    <li><strong>Event listings</strong> come from public sources (e.g. Ticketmaster, Resident Advisor, GoOut); your identity is never sent to them.</li>
+  </ul>
+
+  <h2>Retention and deletion</h2>
+  <ul>
+    <li>Disconnecting a music source in the app immediately deletes the imported artists and everything derived from them.</li>
+    <li>Deleting the app discards the device identifier; the profile it pointed to becomes permanently orphaned and unreachable.</li>
+    <li>To request deletion of orphaned data, contact us with the approximate date you used the app.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>MapApp is developed by Tomáš Kňaze. Questions and deletion requests:
+  <a href="mailto:knaze@me.com">knaze@me.com</a>.</p>
+</main>
+</body>
+</html>
